@@ -17,31 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBD-Vm-4FZ">
-                                <rect key="frame" x="0.0" y="351" width="376" height="316"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="316" id="6Sj-CE-N0t"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-35-b1o">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="343"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="BBD-Vm-4FZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2H4-4d-XEt"/>
-                            <constraint firstItem="lfa-35-b1o" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3id-QQ-6Or"/>
-                            <constraint firstItem="lfa-35-b1o" firstAttribute="trailing" secondItem="BBD-Vm-4FZ" secondAttribute="trailing" id="MVN-30-hPr"/>
-                            <constraint firstItem="lfa-35-b1o" firstAttribute="leading" secondItem="BBD-Vm-4FZ" secondAttribute="leading" id="VeH-CH-8w1"/>
-                            <constraint firstItem="lfa-35-b1o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XUA-MJ-eDQ"/>
-                            <constraint firstItem="BBD-Vm-4FZ" firstAttribute="top" secondItem="lfa-35-b1o" secondAttribute="bottom" constant="8" symbolic="YES" id="ecM-gH-2gm"/>
-                            <constraint firstItem="lfa-35-b1o" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="h5u-bf-Kip"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
