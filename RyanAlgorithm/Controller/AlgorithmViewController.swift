@@ -50,11 +50,11 @@ public class AlgorithmViewController: UIViewController
             let bullet : String = "🤔" //defines the bullet
             let formattedStep : String = "\n\(bullet) \(step)" // formats a line of text
             let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep) // creates a mutable string out of the formatted step
-            let outlineStyle = createOutlineStyle() //
+            let outlineStyle = createOutlineStyle() //creates a paragraph style
             
-            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length)) //adds outline style to the whole paragraph
             
-            fullAttributedString.append(attributedStringStep)
+            fullAttributedString.append(attributedStringStep) //adds the formatted string to the paragraph
         }
         algorithmText.attributedText = fullAttributedString
     }
