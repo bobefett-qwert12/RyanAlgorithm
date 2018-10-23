@@ -30,6 +30,8 @@ public class AlgorithmViewController: UIViewController
     
     private func formatAlgorithm() -> Void
     {
+        let title : String = "How to make a Swift Project"
+        
         let stepOne : String = "Make the project"
         let stepTwo : String = "Create the model, view, controller, and resources packages, and put the proper files in them (create a model file if needed)"
         let stepThree : String = "Fix return types and visibilities on pre-existing functions, and change file names as necessary"
@@ -37,8 +39,24 @@ public class AlgorithmViewController: UIViewController
         let stepFive : String = "Put things on the storyboard (click and drag)"
         let stepSix : String = "Connect the storyboard interaction objects to the code through the assistant editor (right-click and drag)"
         let stepSeven : String = "Code to your heart’s content"
+        
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven]
-        let bullet : String = "🤔"
+        
+        let attribuesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attribuesDictionary)
+        
+        for step in algorithm
+        {
+            let bullet : String = "🤔" //defines the bullet
+            let formattedStep : String = "\n\(bullet) \(step)" // formats a line of text
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep) // creates a mutable string out of the formatted step
+            let outlineStyle = createOutlineStyle() //
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
+            
+            fullAttributedString.append(attributedStringStep)
+        }
+        algorithmText.attributedText = fullAttributedString
     }
     
     private func createOutlineStyle() -> NSParagraphStyle
